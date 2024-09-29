@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>SAI - Samrat Artificial Intelligence</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default rounded borders and increase the bottom margin */ 
+    .navbar {
+      margin-bottom: 50px;
+      border-radius: 0;
+    }
+
+    /* Remove the jumbotron's default bottom margin */ 
+    .jumbotron {
+      margin-bottom: 0;
+    }
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+
+    /* Additional styles */
+    .search-bar {
+      margin: 20px 0;
+    }
+
+    .panel-heading {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .panel-footer {
+      font-weight: bold;
+    }
+
+    .service {
+      display: none; /* Hide all services initially */
+    }
+  </style>
+  <script>
+    function searchServices() {
+      const input = document.getElementById('searchInput').value.toLowerCase();
+      const services = document.getElementsByClassName('service');
+
+      for (let i = 0; i < services.length; i++) {
+        const serviceName = services[i].querySelector('.panel-heading').innerText.toLowerCase();
+        services[i].style.display = serviceName.includes(input) ? 'block' : 'none';
+      }
+    }
+  </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">SAI-Samrat Artificial Intelligence</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Deals</a></li>
+        <li><a href="#">Stores</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="search-bar text-center">
+    <input type="text" id="searchInput" class="form-control" placeholder="Search for services..." onkeyup="searchServices()">
+  </div>
+
+  <div class="row">
+    <div class="col-sm-4 service">
+      <div class="panel panel-primary">
+        <div class="panel-heading">AI ML</div>
+        <div class="panel-body"><img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive" style="width:100%" alt="AI ML"></div>
+        <div class="panel-footer">Design AI models, preprocess data, optimize algorithms, deploy, and monitor systems.</div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 service">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Graphics & Design</div>
+        <div class="panel-body"><img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive" style="width:100%" alt="Graphics & Design"></div>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OoOsXkycGk2G4j" async> </script></form>
+        <div class="panel-footer">Buy PYTHON Pdf Book</div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 service">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Web Development</div>
+        <div class="panel-body"><img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive" style="width:100%" alt="Web Development"></div>
+        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_OoOsXkycGk2G4j" async> </script></form>
+        <div class="panel-footer">Custom website solutions for your business.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="text-center">Popular Services</h3>
+    <div class="col-sm-4 service">
+      <div class="panel panel-primary">
+        <div class="panel-heading">SEO Services</div>
+        <div class="panel-body"><img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive" style="width:100%" alt="SEO Services"></div>
+        <div class="panel-footer">Enhance your online visibility and drive traffic.</div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 service">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Content Writing</div>
+        <div class="panel-body"><img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive" style="width:100%" alt="Content Writing"></div>
+        <div class="panel-footer">Engaging content for your blogs and websites.</div>
+      </div>
+    </div>
+
+    <div class="col-sm-4 service">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Digital Marketing</div>
+        <div class="panel-body"><img src="https://images.pexels.com/photos/415071/pexels-photo-415071.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-responsive" style="width:100%" alt="Digital Marketing"></div>
+        <div class="panel-footer">Boost your online presence with targeted marketing.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="text-center">Testimonials</h3>
+    <div class="col-sm-4">
+      <blockquote>"The best AI services I've ever used!"</blockquote>
+      <cite>- Happy Client</cite>
+    </div>
+    <div class="col-sm-4">
+      <blockquote>"Excellent designs and support!"</blockquote>
+      <cite>- Satisfied Customer</cite>
+    </div>
+    <div class="col-sm-4">
+      <blockquote>"Great experience with web development!"</blockquote>
+      <cite>- Grateful User</cite>
+    </div>
+  </div>
+</div><br>
+
+<footer class="container-fluid text-center">
+  <p>© SAMRAT TAYADE</p>  
+</footer>
+
+</body>
+</html>
