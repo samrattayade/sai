@@ -91,3 +91,33 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+
+/* Additional styles for the image gallery */
+.gallery {
+    padding: 2em;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1em;
+    margin: 2em 0;
+}
+
+.gallery-item {
+    border: 2px solid #ddd;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+h1, h2 {
+    margin: 0.5em 0;
+}
