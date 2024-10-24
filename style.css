@@ -85,13 +85,13 @@ button {
 footer {
     text-align: center;
     background-color: #333;
-    color: white;
-    padding: 1em;
-    position: fixed;
-    width: 100%;
+    color: white;    
     bottom: 0;
+    background-color: #f1f1f1;
+    padding: 1em;
+    text-align: center;
+    color: #555;
 }
-
 
 /* Additional styles for the image gallery */
 .gallery {
