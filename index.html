@@ -1,680 +1,151 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <!-- Basic -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
-  <link rel="icon" href="images/favicon.png" type="image/gif" />
-  <meta name="keywords" content="samrattayade, Samrat Artificial Intelligence" />
-  <meta name="description" content="All types of " />
-  <meta name="author" content="Samrat Tayade" />
-
-  <title>SAI</title>
-
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAI - Samrat Artificial Intelligence</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fffdfc;
+      color: #222;
+    }
+    .navbar {
+      background-color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .navbar-brand {
+      font-weight: 800;
+      color: #ff6f61 !important;
+    }
+    header {
+      background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('https://images.pexels.com/photos/218863/pexels-photo-218863.jpeg') no-repeat center center/cover;
+      height: 100vh;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 0 20px;
+    }
+    header h1 {
+      font-size: 3.2rem;
+      font-weight: 800;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 10px;
+    }
+    .btn-primary, .whatsapp-btn {
+      background-color: #ff6f61;
+      border: none;
+      padding: 12px 28px;
+      font-weight: 600;
+      margin-top: 20px;
+      border-radius: 8px;
+      color: white;
+      text-decoration: none;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+    }
+    .btn-primary:hover, .whatsapp-btn:hover {
+      background-color: #e95445;
+    }
+    section {
+      padding: 80px 0;
+    }
+    section h2 {
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #ff6f61;
+    }
+    .service-card {
+      background: linear-gradient(135deg, #ffffff, #fff5f4);
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+      transition: 0.4s ease-in-out;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      background: linear-gradient(135deg, #ffe4e1, #fff);
+    }
+    .service-card img {
+      max-width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+    .about-img {
+      max-width: 100%;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    footer {
+      background-color: #1e1e2f;
+      color: #ddd;
+      padding: 24px 0;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- header section strats -->
-  <header class="header_section">
-    <div class="container-fluid">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>
-            SAI
-          </span>
-        </a>
-        <div class="" id="">
-
-          <div class="custom_menu-btn">
-            <button onclick="openNav()">
-              <span class="s-1"> </span>
-              <span class="s-2"> </span>
-              <span class="s-3"> </span>
-            </button>
-            <div id="myNav" class="overlay">
-              <div class="overlay-content">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="shop.html">Shop</a>
-                <a href="blog.html">Blog</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </nav>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">SAI - Samrat Artificial Intelligence</a>
     </div>
+  </nav>
+
+  <header>
+    <h1>Empowering Intelligence with Innovation</h1>
+    <p>Web Development | AI Solutions | Automation</p>
+    <a href="https://wa.me/7558389354" target="_blank" class="whatsapp-btn">Chat on WhatsApp</a>
   </header>
-  <!-- end header section -->
 
-  <!-- slider section -->
-  <section class="slider_section position-relative">
-    <div class="slider_bg_box img-fluid">
-      <img src="images/slider-bg.jpg" alt="samrattayade" class="img-fluid">
-    </div>
-    <div class="slider_bg"></div>
-    <div class="container">
-      <div class="col-md-9 col-lg-8">
-        <div class="detail-box">
-          <h1>
-            SAMRAT
-            <br>ARTIFICIAL <br>INTELLIGENCE
-          </h1>
-          <p>
-            Samrat Artificial Intelligence is a versatile tech company offering a range of services from creative graphic design to cutting-edge AI and machine learning solutions. We empower businesses with innovative technology to enhance visual appeal, streamline processes, and drive data-driven decisions.
-          </p>
-          <div>
-            <a href="shop.html" class="slider-link">
-             SERVICES
-            </a>
-          </div>
+  <section id="services" class="container text-center">
+    <h2>Our Services</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="https://images.pexels.com/photos/838413/pexels-photo-838413.jpeg" alt="AI Development">
+          <h4>AI Development</h4>
+          <p>We provide AI-powered solutions to streamline operations and boost productivity.</p>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- end slider section -->
-
-  <!-- shop section -->
-
-  <section class="shop_section layout_padding">
-    <div class="container">
-      <div class="heading_container heading_center">
-        <h2>
-          Latest Services
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p1.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Graphics & Design		
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $200
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p2.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Programming & Tech
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $300
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p3.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Digital Marketing
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $110
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p4.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Video & Animation
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $45
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p5.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Writing & Translation
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $95
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p6.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Music & Audio
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $70
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p7.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>                  
-                     AI Services
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $400
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="box">
-            <a href="">
-              <div class="img-box">
-                <img src="images/p8.png" alt="">
-              </div>
-              <div class="detail-box">
-                <h6>
-                  Consulting
-                </h6>
-                <h6>
-                  Price
-                  <span>
-                    $450
-                  </span>
-                </h6>
-              </div>
-              <div class="new">
-                <span>
-                  New
-                </span>
-              </div>
-            </a>
-          </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="https://images.pexels.com/photos/1181671/pexels-photo-1181671.jpeg" alt="Web Development">
+          <h4>Web Development</h4>
+          <p>Custom responsive websites using modern tech to boost your digital brand.</p>
         </div>
       </div>
-      <div class="btn-box">
-        <a href="">
-          View All Products
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- end shop section -->
-
-  <!-- about section -->
-
-  <section class="about_section  ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="img-box">
-            <img src="images/about.jpg" alt="">
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="detail-box">
-            <div class="heading_container">
-              <h2>
-                About Us
-              </h2>
-            </div>
-            <p>
-             Samrat Artificial Intelligence specializes in delivering comprehensive digital solutions that meet the unique needs of businesses across industries. Our services include high-quality graphic design to elevate brand identity, advanced website development for seamless user experiences, and data-driven AI and machine learning solutions for smarter decision-making.
-            </p>
-            <a href="">
-              Read More
-            </a>
-          </div>
+      <div class="col-md-4">
+        <div class="service-card">
+          <img src="https://images.pexels.com/photos/3184638/pexels-photo-3184638.jpeg" alt="Automation">
+          <h4>Automation</h4>
+          <p>Automated systems to reduce manual tasks and enhance business performance.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- end about section -->
-
-  <!-- offer section -->
-
-  <section class="offer_section layout_padding">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-7 px-0">
-          <div class="box offer-box1">
-            <img src="images/o1.jpg" alt="">
-            <div class="detail-box">
-              <h2>
-                Upto 15% Off
-              </h2>
-              <a href="">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-5 px-0">
-          <div class="box offer-box2">
-            <img src="images/o2.jpg" alt="">
-            <div class="detail-box">
-              <h2>
-                Upto 10% Off
-              </h2>
-              <a href="">
-                Shop Now
-              </a>
-            </div>
-          </div>
-          <div class="box offer-box3">
-            <img src="images/o3.jpg" alt="">
-            <div class="detail-box">
-              <h2>
-                Upto 20% Off
-              </h2>
-              <a href="">
-                Shop Now
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+  <section id="about" class="bg-light text-center">
+    <div class="container">
+      <h2>About Us</h2>
+      <img class="about-img" src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="About SAI - SAI - Samrat Artificial Intelligence" />
+      <p class="mt-3">SAI - Samrat Artificial Intelligence is a freelance venture by Samrat Tayade, delivering expert Web and AI solutions tailored to modern businesses and startups with a focus on innovation and automation.</p>
     </div>
   </section>
 
-  <!-- end offer section -->
-
-  <!-- blog section -->
-
-  <section class="blog_section ">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Latest From Blog
-        </h2>
-      </div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b1.jpg" alt="">
-              <h4 class="blog_date">
-                2 <br>
-                Oct
-              </h4>
-            </div>
-            <div class="detail-box">
-              <h5>
-                Mahatma Gandhi Jayanti: Celebrating the Legacy of Peace and Nonviolence
-              </h5>
-              <p>
-                Every year on October 2nd, India and the world come together to commemorate Mahatma Gandhi Jayanti, marking the birth anniversary of one of history's most influential leaders.
-              </p>
-              <a target="_blank" href="https://www.samrattayade.com/2024/09/mahatma-gandhi-jayanti-celebrating.html">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="box">
-            <div class="img-box">
-              <img src="images/b2.jpg" alt="">
-              <h4 class="blog_date">
-                2 <br>
-                Oct
-              </h4>
-            </div>
-            <div class="detail-box">
-              <h5>
-                महात्मा गांधी जयंती: शांतता आणि अहिंसाची वारसा साजरी करण्याचा दिवस
-              </h5>
-              <p>
-               दरवर्षी २ ऑक्टोबर रोजी भारत आणि जगभर महात्मा गांधी जयंती साजरी केली जाते, जेणेकरून इतिहासातील एक अत्यंत प्रभावशाली नेत्याच्या जन्मदिवसाचे स्मरण केले जाते.
-              </p>
-              <a target="_blank" href="https://www.samrattayade.com/2024/09/blog-post_27.html">
-                Read More
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end blog section -->
-
-  <!-- client section -->
-
-  <section class="client_section layout_padding">
-    <div class="container">
-      <div class="heading_container">
-        <h2>
-          Testimonial
-        </h2>
-      </div>
-      <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Samantha Jonas
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Samantha Jonas
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row">
-              <div class="col-md-11 col-lg-10 mx-auto">
-                <div class="box">
-                  <div class="img-box">
-                    <img src="images/client.jpg" alt="" />
-                  </div>
-                  <div class="detail-box">
-                    <div class="name">
-                      <h6>
-                        Samantha Jonas
-                      </h6>
-                    </div>
-                    <p>
-                      It is a long established fact that a reader will be
-                      distracted by the readable cIt is a long established fact
-                      that a reader will be distracted by the readable c
-                    </p>
-                    <i class="fa fa-quote-left" aria-hidden="true"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="carousel_btn-container">
-          <a class="carousel-control-prev" href="#carouselExample2Controls" role="button" data-slide="prev">
-            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExample2Controls" role="button" data-slide="next">
-            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end client section -->
-
-  <!-- info section -->
-  <section class="info_section layout_padding2">
-    <div class="container">
-      <div class="row info_form_social_row">
-        <div class="col-md-8 col-lg-9">
-          <div class="info_form">
-            <form action="">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                <i class="fa fa-arrow-right" aria-hidden="true"></i>
-              </button>
-            </form>
-          </div>
-        </div>
-        <div class="col-md-4 col-lg-3">
-
-          <div class="social_box">
-            <a href="">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a href="">
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="row info_main_row">
-        <div class="col-md-6 col-lg-3">
-          <div class="info_links">
-            <h4>
-              Menu
-            </h4>
-            <div class="info_links_menu">
-              <a href="index.html">Home</a>
-              <a href="about.html">About</a>
-              <a href="shop.html">Shop</a>
-              <a href="blog.html">Blog</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_insta">
-            <h4>
-              Instagram
-            </h4>
-            <div class="insta_box">
-              <div class="img-box">
-                <img src="images/p1.png" alt="">
-              </div>
-              <p>
-                long established fact that a reader
-              </p>
-            </div>
-            <div class="insta_box">
-              <div class="img-box">
-                <img src="images/p2.png" alt="">
-              </div>
-              <p>
-                long established fact that a reader
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <div class="info_detail">
-            <h4>
-              About Us
-            </h4>
-            <p class="mb-0">
-              when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
-            </p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-          <h4>
-            Contact Us
-          </h4>
-          <div class="info_contact">
-            <a href="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Location
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call +91 00
-              </span>
-            </a>
-            <a href="">
-              <i class="fa fa-envelope"></i>
-              <span>
-                mr.samrattayade@gmail.com
-              </span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- end info_section -->
-
-
-  <!-- footer section -->
-  <footer class="footer_section">
-    <div class="container">
-      <p>
-        &copy; <span id="displayYear"></span> All Rights Reserved By
-        <a href="https://sai.samrattayade.com/">SAMRAT ARTIFICIAL INTELLIGENCE</a>
-      </p>
-    </div>
+  <footer>
+    <p>&copy; 2025 SAI - Samrat Artificial Intelligence | All rights reserved</p>
   </footer>
-  <!-- footer section -->
-
-
-  <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
-  <!-- custom js -->
-  <script src="js/custom.js"></script>
 
 </body>
-
 </html>
