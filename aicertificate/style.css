@@ -307,3 +307,25 @@ button {
     font-size: 18px;
   }
 }
+
+
+
+
+
+/* Copyright Section */
+.copyright {
+  margin-top: 50px;
+  padding: 18px 0;
+  width: 100%;
+  text-align: center;
+
+  font-size: 14px;
+  color: #6b7280;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+.copyright strong {
+  color: #1f2937;
+  font-weight: 500;
+}
