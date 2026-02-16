@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Awareness Certification</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="image1">
+
+<h1 class="color1">AI Awareness Certification</h1>
+
+<label class="color1">Enter Your First Name + Last Name : </label>
+<input class="input-field" type="text" id="username" placeholder="Enter your name" required>
+<br><br>
+<button class="btn" onclick="startQuiz()">Start Quiz</button>
+
+<script>
+function startQuiz() {
+  const name = document.getElementById("username").value;
+  if (name === "") {
+    alert("Please enter your name");
+    return;
+  }
+  localStorage.setItem("username", name);
+  window.location.href = "quiz.html";
+}
+</script>
+
+</body>
+</html>

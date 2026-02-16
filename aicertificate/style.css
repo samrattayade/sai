@@ -1,0 +1,309 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 30px;
+  
+}
+.color1 {
+  background-color: aliceblue;
+  color: blue;
+}
+
+#certificate {
+  border: 3px solid black;
+  padding: 40px;
+  margin: 20px;
+}
+
+
+.input-field {
+  width: 25%;
+  padding: 12px 14px;
+  font-size: 16px;
+  font-family: inherit;
+
+  color: #111827;
+  background-color: #ffffff;
+
+  border: 1.5px solid #d0d7de;
+  border-radius: 8px;
+
+  outline: none;
+  transition: 
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.image1{
+  background-image: url("https://images.pexels.com/photos/18799044/pexels-photo-18799044.jpeg");
+  background-repeat: no-repeat;
+  background-size: 1280px;
+}
+
+
+
+
+.btn {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+
+  color: #ffffff;
+  background-color: #2563eb;
+
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  transition: 
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+
+
+
+
+
+
+
+
+/*New code*/
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+body {
+  background: #f3f4f6;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Certificate Container */
+#certificate {
+  width: 900px;
+  height: 600px;
+  background: #ffffff;
+  padding: 50px;
+  text-align: center;
+  position: relative;
+
+  border: 12px solid transparent;
+  border-image: linear-gradient(45deg, #c9a227, #f5e08e, #c9a227) 1;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+/* Decorative lines */
+#certificate::before,
+#certificate::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 2px;
+  background: linear-gradient(to right, #c9a227, #f5e08e, #c9a227);
+  left: 5%;
+}
+
+#certificate::before {
+  top: 40px;
+}
+
+#certificate::after {
+  bottom: 40px;
+}
+
+/* Headings */
+#certificate h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  color: #1f2937;
+  margin-bottom: 10px;
+}
+
+#certificate h2 {
+  font-size: 34px;
+  color: #2563eb;
+  margin: 20px 0;
+}
+
+#certificate h3 {
+  font-size: 26px;
+  color: #374151;
+  margin-bottom: 30px;
+}
+
+/* Paragraph text */
+#certificate p {
+  font-size: 18px;
+  color: #4b5563;
+  margin: 10px 0;
+}
+
+/* Date */
+#date {
+  font-weight: 500;
+  color: #111827;
+}
+
+/* Download Button */
+button {
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  border: none;
+  border-radius: 8px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 99, 235, 0.4);
+}
+
+
+
+
+/* Quiz style*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  font-family: 'Poppins', sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* Page Title */
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 38px;
+  margin-bottom: 25px;
+  color: #1f2937;
+  text-align: center;
+}
+
+/* Quiz Card */
+#quizForm {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff;
+  padding: 40px 45px;
+
+  border-radius: 14px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.12);
+  border-top: 6px solid #2563eb;
+}
+
+/* Each Question Block */
+.question {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.question:last-child {
+  border-bottom: none;
+}
+
+/* Question Text */
+.question h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #111827;
+  margin-bottom: 15px;
+}
+
+/* Options */
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 10px 14px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.option:hover {
+  background-color: #f1f5f9;
+}
+
+.option input {
+  margin-right: 12px;
+  accent-color: #2563eb;
+}
+
+.option label {
+  font-size: 16px;
+  color: #374151;
+  cursor: pointer;
+}
+
+/* Submit Button */
+button {
+  margin-top: 35px;
+  padding: 14px 36px;
+  font-size: 16px;
+  font-weight: 500;
+
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+
+  border: none;
+  border-radius: 10px;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* Center Button */
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 30px;
+  }
+
+  #quizForm {
+    padding: 30px 20px;
+  }
+
+  .question h3 {
+    font-size: 18px;
+  }
+}
