@@ -1,39 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Awareness Certification</title>
   <link rel="stylesheet" href="style.css">
 </head>
-  
 <body class="image1">
-  
-<h1 class="color1">AI Awareness Certification</h1>
+  <div style="max-width: 600px; width: 100%; position: relative; z-index: 1;">
+    <h1 class="color1">🤖 AI Awareness<br>Certification</h1>
+    
+    <label class="color1">Enter Your Name:</label>
+    <input class="input-field" type="text" id="username" placeholder="Full Name" required>
+    
+    <button class="btn" onclick="startQuiz()">Start Quiz</button>
+  </div>
 
-<label class="color1">Enter Your First Name + Last Name : </label>
-<input class="input-field" type="text" id="username" placeholder="Enter your name" required>
-<br><br>
-<button class="btn" onclick="startQuiz()">Start Quiz</button>
+  <footer class="copyright">
+    <p>© 2026 <strong><a href="https://sai.samrattayade.com/">SAI</a> - <a href="https://samrattayade.com/">Samrat</a> Artificial Intelligence</strong></p>
+    <p>All Rights Reserved.</p>
+  </footer>
 
-<script>
-function startQuiz() {
-  const name = document.getElementById("username").value;
-  if (name === "") {
-    alert("Please enter your name");
-    return;
-  }
-  localStorage.setItem("username", name);
-  window.location.href = "quiz.html";
-}
-</script>
-
-
-  <br>
-  <br>
-  <br>
-  <br>
-<footer class="copyright">
-  © 2026 <strong><a href="https://sai.samrattayade.com/">SAI</a>-<a href="https://samrattayade.com/">Samrat </a>Artificial Intelligence</strong>. All Rights Reserved. 
-</footer>
+  <script>
+    function startQuiz() {
+      const name = document.getElementById("username").value;
+      if (name.trim() === "") {
+        alert("Please enter your name");
+        return;
+      }
+      localStorage.setItem("username", name);
+      window.location.href = "quiz.html";
+    }
+    
+    // Enter key support
+    document.getElementById("username").addEventListener("keypress", function(event) {
+      if (event.key === "Enter") {
+        startQuiz();
+      }
+    });
+  </script>
 </body>
 </html>
 
